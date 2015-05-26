@@ -27,7 +27,7 @@ public class ConnectionHandler {
 	public static Connection getConnection() throws SQLException{
 
 		if (conn == null || conn.isClosed())
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@db.inf.unideb.hu:1521:ora11g", "h_ova4i6", "");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@db.inf.unideb.hu:1521:ora11g", "", "");
 		
 		return conn;
 	}
